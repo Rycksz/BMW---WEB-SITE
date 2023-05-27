@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@200;300;400;500;600;700;800;900&display-swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#4682B4;
+    transition: 0.5s;
+}
+
+header{
+    position: absolute;
+    box-shadow: 0px 3px 10px #464646;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+header .logo{
+    position: relative;
+    max-width: 55px;
+    transition: 0.3s;
+}
+
+header .logo:hover{
+    transform: rotate(360deg);
+}
+
+header ul{
+    max-width:800px;
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size:medium;
+    font-weight: 600;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-decoration-color: #348dd6;
+    text-decoration-thickness: 3px;
+
+}
+
+header ul li:hover{
+    transform: translateY(-10px);
+    font-size: 150%;
+    transition: 0.3s;
+}
+
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+    max-width: 700px;
+    left: 10%;
+    margin-top: 1%;
+}
+.content .textbox h2{
+    color:#fff;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textbox h2 span{
+    font-size: 2em;
+    
+}
+
+.content .textbox p {
+    color:#fff;
+    font-size: 2em;
+    font-weight: 550;
+    line-height: 1.5em;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 40px;
+    border: 3px solid #e4e4e4;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.content .textbox a:hover {
+    transform: translateY(-10px);
+   transition: 0.2s;
+   background-color: #353232; 
+  color: rgb(255, 255, 255);
+  border: none;
+   
+}
+
+.content .imgbox{
+    width: 60px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: -40px;
+    justify-content: flex-end;
+}
+.content .imgbox img{
+    max-width: 600px;
+    
+
+}
+
+
+.thumb {
+  position: absolute;
+  left: 35%;
+  bottom: 20px;
+  transform: translateX(-50px);
+  display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 90px;
+}  
+
+
+.mobile-menu-icon{
+    display: none;
+    margin-right: -50px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+/*tablet*/
+@media screen and (max-width:768px){
+    section, header ul li a{
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+}
+@media screen and (max-width:768px){
+    header .logo{
+       margin-left: -300%;
+       height: 40px;
+       margin-top: -10px;
+       
+    }
+}
+
+/*mobile*/
+
+@media screen and (max-width:600px){
+    header ul li a{
+        margin-left: 15px;
+        right: 50px;  
+        display: none; 
+    }
+
+    .thumb, .thumb li img{
+        left: 100px;
+        padding: 0px;
+        max-width: 60px;
+    }
+    
+    /*customização do menu responsivo*/ 
+
+    .mobile-menu-icon{
+        position: fixed;
+        display:block;
+        right: 100px;
+           
+    }
+     
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border:none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        padding-bottom: 1rem;
+
+    }
+
+    .mobile-menu ul li a {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .content .imgbox img{
+        opacity: 0.3;
+
+    }
+
+    .content .textbox {
+        left: 15px;
+          
+    }
+
+    .content .imgbox img{
+        max-width: 500px;
+        margin-right: -50px;
+    }
+
+    .open{
+        display: block;
+    }
+
+}
+
+
