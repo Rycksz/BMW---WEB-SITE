@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Registro criado com sucesso
             $mensagem = 'Conta criada com sucesso!';
             // Redirecionar para a tela de login
-            header('Location: /php/login.php');
+            header('Location: login.php');
             exit;
         } else {
             // Erro ao criar a conta
