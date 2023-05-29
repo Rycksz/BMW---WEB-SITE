@@ -1,10 +1,10 @@
-<?php
+<!-- <?php
 
-//     if(isset ($_POST['cadastrar']))
+    if(isset ($_POST['cadastrar']))
 //    {
-// //       print_r($_POST['nome']);
-// //       print_r($_POST['email']);
-// //       print_r($_POST['senha']);
+//      print_r($_POST['nome']);
+//        print_r($_POST['email']);
+//       print_r($_POST['senha']);
 
 
 // include_once('config.php');
@@ -15,7 +15,7 @@
 
 //  $result = mysqli_query($conexao, "INSERT INTO acesso_login(nome, email, senha) VALUES('$nome', '$email', '$senha')");
 
-// }
+//  }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verifica se o formulário foi enviado
@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Inserir os dados no banco de dados
         $sql = "INSERT INTO acesso_login (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+        print $sql;
         if ($conexao->query($sql) === TRUE) {
             // Registro criado com sucesso
             $mensagem = 'Conta criada com sucesso!';
@@ -63,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
  
-?>
+?> -->
 
 
 

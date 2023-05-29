@@ -34,7 +34,7 @@ $logado = $_SESSION['email'];
                 <li><a href="#">Comprar</a></li>
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">carrinho</a></li>
-                <li><a href="sair.php">Sair</a></li>   
+                <li><a href="login.php">Sair</a></li>   
             </ul>
 
 
