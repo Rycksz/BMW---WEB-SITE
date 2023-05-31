@@ -276,7 +276,7 @@ box-shadow: 4px 4px 12px #464646;
         .card3 h1{
             font-size: 1.2rem;
             background: none;
-            margin-top: 520%;
+            margin-top: 470%;
         }
         
         .card3 h2{
@@ -289,18 +289,21 @@ box-shadow: 4px 4px 12px #464646;
             background: none;
         }
         
-        .card3 button {
-            background-color: #4682B4;
-            border: none;
-            padding: 6px;
+        .card3 a {
+            display: inline-block;
+            background: #348dd6;
+            height: 36px;
             width: 150%;
-            color: #fff;
-            font-size: 1rem;
+            padding: 4px;
+            border:none;
+            color: rgb(255, 255, 255);
+            border-radius: 6px;
             font-weight: bold;
-            border-radius: 6%;
-            cursor: pointer;
-        
-        
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;  
+            
         }
  
 .card .imgbox{

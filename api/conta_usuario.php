@@ -89,7 +89,7 @@ $logado = $_SESSION['email'];
             <h1>BMW X5</h1>
             <h2>elétrico</h2>
             <span>R$ 300.000</span>
-            <button> COMPRAR </button>
+            <a href="#">comprar</a>
         </div>
 
         <div class="imgbox">
