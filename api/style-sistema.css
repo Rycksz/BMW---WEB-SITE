@@ -289,7 +289,7 @@ box-shadow: 4px 4px 12px #464646;
             background: none;
         }
         
-        .card3 a {
+        .card3 button {
             display: inline-block;
             background: #348dd6;
             height: 36px;

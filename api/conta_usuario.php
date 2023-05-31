@@ -21,7 +21,7 @@ $logado = $_SESSION['email'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style-sistema.css" rel="stylesheet">
-    <script type="text/javascript" src="./index.js" defer></script>
+    <script type="text/javascript" src="./consulta_cep.js" defer></script>
     <title>BMW - SUA CONTA</title>
 </head>
 <body>
@@ -67,13 +67,12 @@ $logado = $_SESSION['email'];
             <div class="textbox">
                 <h2>ESCOLHA SUA BMW</h2>
             </div> -->
-
        <div class="card">
         <div>
             <h1>BMW i8</h1>
             <h2>elétrico</h2>
             <span>R$ 100.000</span>
-            <button> COMPRAR </button>
+            <button class="comprarButton"> COMPRAR </button>
         </div>
 
         <div class="card2">
@@ -81,7 +80,7 @@ $logado = $_SESSION['email'];
             <h1>BMW iX3</h1>
             <h2>elétrico</h2>
             <span>R$ 200.000</span>
-            <button> COMPRAR </button>
+            <button class="comprarButton"> COMPRAR </button>
         </div>
 
         <div class="card3">
@@ -89,8 +88,10 @@ $logado = $_SESSION['email'];
             <h1>BMW X5</h1>
             <h2>elétrico</h2>
             <span>R$ 300.000</span>
-            <a href="#">comprar</a>
+            <button class="comprarButton"> COMPRAR </button>
+            
         </div>
+
 
         <div class="imgbox">
                 <img src="img/bmw01.png"  class="bmw01">
@@ -104,6 +105,9 @@ $logado = $_SESSION['email'];
                 <img src="img/bmw3.png"  class="bmw03">
             </div>
        </div>  
+
+]
+
        
       
 
