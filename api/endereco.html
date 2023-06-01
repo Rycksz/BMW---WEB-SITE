@@ -4,16 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style-endereco.css" rel="stylesheet">
     <script type="text/javascript" src="./consulta_cep.js" defer></script>
+    <script type="text/javascript" src="./index.js"></script>
     <title>Informe seu endereço</title>
 </head>
 <body>
+    <section class="sec">
+        <header>
+            <a href="conta_usuario.php"><img src="img/logo1.png" class="logo"></a>
+            <ul>
+                <li><a href="conta_usuario.php">Início</a></li>
+                <li><a href="#">Comprar</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="sair.php">Sair</a></li>
+            </ul>
+
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu.png" alt="Menu"></button>
+            </div>
+            
+
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="conta_usuario.php">Início</a></li>
+                    <li><a href="#">Comprar</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="sair.php">Sair</a></li>
+                </ul>
+            </div>
+        </header>
+
     <h1>Detalhes do Produto</h1>
     <p>Informe o CEP para entrega:</p>
     <input type="text" id="cepInput" placeholder="Digite o CEP">
     <button id="consultarButton">Consultar</button>
 
     <div id="endereco"></div>
+
+    
     
 </body>
 </html>
